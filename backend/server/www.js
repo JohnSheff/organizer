@@ -20,7 +20,8 @@ const publicPath = path.join(__dirname, '..', 'build');
 app.use(express.static(publicPath))
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-http.createServer(app).listen(5010)
+http.createServer(app).listen(process.env.PORT || 5010)
 app.use(logger('dev'));
+
 app.use(cookieParser());
 app.use('/', indexRouter);
