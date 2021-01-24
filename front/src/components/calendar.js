@@ -45,8 +45,7 @@ export default function Calendars() {
             const conData = new Date(item.date);
             return (
                 conData.getDate() === value._d.getDate() &&
-                conData.getMonth() === value._d.getMonth() &&
-                conData.getFullYear() === value._d.getFullYear()
+                conData.getMonth() === value._d.getMonth()
             );
         });
         const filterEvents = calendars.filter(item => {
