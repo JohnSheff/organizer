@@ -18,14 +18,8 @@ mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cl
 });
 const publicPath = path.join(__dirname, '..', 'build');
 
-app.get('/*', function(req, res) {
-    res.sendFile(publicPath, function(err) {
-        if (err) {
-            res.status(500).send(err)
-        }
-    })
-})
-// app.use('/calendar', express.static(publicPath));
+
+app.use('/calendar', express.static(publicPath));
 app.use(express.static(publicPath))
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
