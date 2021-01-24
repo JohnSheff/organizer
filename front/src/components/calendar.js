@@ -11,12 +11,12 @@ export default function Calendars() {
     const [form] = useForm();
 
     const updateData = () => {
-        fetch("http://localhost:5010/contacts")
+        fetch("/contacts")
             .then(d => d.json())
             .then(res => {
                 setContacts(res.data);
             });
-        fetch("http://localhost:5010/calendars")
+        fetch("/calendars")
             .then(d => d.json())
             .then(res => {
                 setCalendars(res.data);

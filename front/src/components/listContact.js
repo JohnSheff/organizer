@@ -11,7 +11,7 @@ export default function ListContact() {
   const [contact, setContact] = useState([]);
 
   const updateData = () =>
-    fetch("http://localhost:5010/contacts")
+    fetch("/contacts")
       .then(d => d.json())
       .then(res => {
         setContact(res.data);
