@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./server/www",
     "dev": "nodemon ./server/www.js localhost 5010",
-    "heroku-postbuild": "cd frontend && npm install && npm run build"
+    "heroku-postbuild": "cd front && npm install && npm run build"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
