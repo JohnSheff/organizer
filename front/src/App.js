@@ -17,7 +17,7 @@ export default function App() {
         <Content style={{ marginTop: 20 }}>
           <Switch>
             <Route exact path="/" component={ListContact} />
-            <Route path="/calendar" component={Calendar} />
+            <Route path="/calendars" component={Calendar} />
           </Switch>
         </Content>
       </Layout>
