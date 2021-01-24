@@ -11,7 +11,7 @@ export default function NavBar() {
         </Link>
       </Breadcrumb.Item>
       <Breadcrumb.Item>
-        <Link to="/calendar">
+        <Link to="/calendars">
           <CalendarOutlined />
           <span>Календарь</span>
         </Link>
