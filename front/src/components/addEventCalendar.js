@@ -6,7 +6,7 @@ const {Option} = Select;
 const {RangePicker} = DatePicker;
 export default function AddCalendar(props) {
     const handlerOnFinish = e => {
-        fetch(`http://localhost:5010/calendars`, {
+        fetch(`/calendars`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

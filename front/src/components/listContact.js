@@ -23,7 +23,7 @@ export default function ListContact() {
 
   const setFormModal = item => {
       setIsModalVisible(true);
-      console.log(moment(new Date(item.date).setHours(0,0,0,0)))
+      // console.log(moment(new Date(item.date).setHours(0,0,0,0)))
     form.setFieldsValue({ ...item, date: moment(item.date) });
   };
   const handleOk = () => {

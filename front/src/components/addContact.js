@@ -4,7 +4,7 @@ import {Form, Input, DatePicker, message} from "antd";
 const {TextArea} = Input;
 export default function AddContact(props) {
     const handlerOnFinish = e => {
-        fetch(`contacts`, {
+        fetch(`/contacts`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
