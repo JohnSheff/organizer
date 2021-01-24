@@ -1,0 +1,12 @@
+{
+  "name": "express-default",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cd backend && npm install && npm start",
+    "heroku-postbuild": "cd frontend && npm install && npm run build && cp -r build ../backend/"
+  },
+  "engines": {
+    "node": "14.15.4"
+  }
+}
